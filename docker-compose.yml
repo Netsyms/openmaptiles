@@ -115,6 +115,7 @@ services:
       BBOX: ${BBOX}
       MIN_ZOOM: ${MIN_ZOOM}
       MAX_ZOOM: ${MAX_ZOOM}
+      UV_THREADPOOL_SIZE: ${UV_THREADPOOL_SIZE}
   postserve:
     image: "openmaptiles/openmaptiles-tools:${TOOLS_VERSION}"
     command: postserve openmaptiles.yaml --verbose
